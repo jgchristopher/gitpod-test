@@ -2,12 +2,12 @@ image:
   file: .gitpod.dockerfile
 
 # List the ports you want to expose and what to do when they are served. See https://www.gitpod.io/docs/43_config_ports/
-#ports:
-#  - port: 4000
+ports:
+  - port: 4000
 
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/44_config_start_tasks/
 tasks:
   # Install front-end assets
 #  - before: mix deps.get
-#    init: psql --command "CREATE USER postgres WITH SUPERUSER PASSWORD 'postgres';" && cd /workspace/rumbl/assets && npm install && node node_modules/webpack/bin/webpack.js --mode development && cd /workspace/rumbl && mix ecto.create
-#    command: mix ecto.migrate && mix run priv/repo/seeds.exs && iex -S mix phx.serverxs
+#    init: psql --command "CREATE USER postgres WITH SUPERUSER PASSWORD 'postgres';" && cd /workspace/gitpod-test/assets && npm install && node node_modules/webpack/bin/webpack.js --mode development && cd /workspace/gitpod-test && mix ecto.create
+#    command: mix ecto.migrate && mix run priv/repo/seeds.exs && iex -S mix phx.server
